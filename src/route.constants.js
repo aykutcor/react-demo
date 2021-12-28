@@ -1,5 +1,5 @@
 export const PUBLIC_ROUTE = {
-	LANDING: '/',
+	LANDING: '/*',
 	HOME: '/app',
 	PAGE_404: '/404',
 };

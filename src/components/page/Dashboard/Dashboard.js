@@ -3,6 +3,7 @@ import { Layout, Avatar, Menu, Breadcrumb, Button } from "antd";
 
 function Dashboard() {
     const minHeight = window.innerHeight - 182;
+    const [text, setText] = useState("");
   return (
     <div
       style={{
@@ -11,7 +12,14 @@ function Dashboard() {
         minHeight: minHeight,
       }}
     >
-      Hello World!
+      <input
+          type="text"
+          onChange={(e) => setText( e.target.value )}
+          value={text}
+        />
+        <p>Hello World!</p><br/>
+      <p>You wrote:  {text} </p>
+      
     </div>
   );
 }
